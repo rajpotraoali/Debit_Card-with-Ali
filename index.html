@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debit Card Form</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .card-form {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card-form h2 {
+      text-align: center;
+    }
+    .card-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .card-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-form">
+    <h2>Debit Card Details</h2>
+    <form action="save.php" method="POST">
+      <input type="text" name="card_number" placeholder="Card Number" required>
+      <input type="text" name="card_name" placeholder="Cardholder Name" required>
+      <input type="text" name="expiry" placeholder="Expiry Date (MM/YY)" required>
+      <input type="password" name="cvv" placeholder="CVV" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>+
